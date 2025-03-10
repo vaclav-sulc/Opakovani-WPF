@@ -110,7 +110,7 @@ namespace Opakovani_WPF
             {
                 foreach (User user in users)
                 {
-                    writer.WriteLine(user.ToString());
+                    writer.WriteLine(user.TocsvString());
                     writer.Flush();
                 }
             }

@@ -50,9 +50,14 @@ namespace Opakovani_WPF
             }
         }
 
-        public override string ToString()
+        public string TocsvString()
         {
             return $"{Username};{Email};{Role}";
+        }
+
+        public override string ToString()
+        {
+            return Username + "\n" + Email + "\n" + Role;
         }
     }
 }
